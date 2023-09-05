@@ -31,6 +31,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('subCategory/{id}',[DashboardController::class, 'index_subcategory'])->name('subcategory');
 
 
 Route::group(['prefix' => 'admin', 'middleware' => ['customAuth']], function () {
@@ -55,6 +56,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['customAuth']], function () 
     Route::get('view-kyc', [KycController::class, 'index_view_kyc'])->name('view-kyc');
 
     Route::get('getCities/{id}', [KycController::class, 'get_city_by_state']);
+    Route::get('getSubcategory/{id}', [KycController::class, 'get_subcategory_by_category']);
 
     Route::get('add-user', [UserController::class, 'index_add_user'])->name('view-add-user');
     Route::post('add-user', [UserController::class, 'post_add_user'])->name('post-add-user');

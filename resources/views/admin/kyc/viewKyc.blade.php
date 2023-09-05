@@ -57,67 +57,67 @@
                     </div>
                     <!-- end page title -->
 
-                    <div class="row">
-                        <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
 
-
-                                    <table id="datatable" class="table responsive table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <table id="datatable" class="table responsive" style="width: 100%;">
                                         <thead>
                                             <tr>
 
                                                 <th>id</th>
                                                 <th>Created By</th>
-                                                <th>Name</th>
-                                                <th>Father name</th>
+                                                <th>First Name</th>
+                                                <th>Last name</th>
+                                                <th>Father Name</th>
+                                                <th>Phone Number</th>
                                                 <th>Qualification</th>
-                                                <th>Wife Name</th>
-                                                <th>Children name</th>
-                                                <th>Phone number</th>
-                                                <th>Address</th>
+                                                <th>Special Education</th>
+                                                <th>Category Name</th>
+                                                <th>Sub Category Name</th>
                                                 <th>Email Id</th>
+                                                <th>Id Proof</th>
                                                 <th>State</th>
                                                 <th>City</th>
+                                                <th>Address</th>
                                                 <th>Pincode</th>
                                                 <th>Created At</th>
                                                 <th>Updated At</th>
                                             </tr>
                                         </thead>
-
-
-                                     
                                         <tbody>
                                             @foreach ($kycs as $kycsData)
-                                         
+
                                             <tr>
                                                 <td> {{ $kycsData->id }} </td>
                                                 <td> {{ $kycsData->created_by }} </td>
-                                                <td> {{ $kycsData->name}} </td>
+                                                <td> {{ $kycsData->first_name}} </td>
+                                                <td> {{ $kycsData->last_name}} </td>
                                                 <td> {{ $kycsData->father_name}} </td>
-                                                <td> {{ $kycsData->qualification}} </td>
-                                                <td> {{ $kycsData->wife_name}} </td>
-                                                <td> {{ $kycsData->children_name}} </td>
                                                 <td> {{ $kycsData->phone_number}} </td>
-                                                <td> {{ $kycsData->address}} </td>
+                                                <td> {{ $kycsData->qualification}} </td>
+                                                <td> {{ $kycsData->special_education}} </td>
+                                                <td> {{ $kycsData->category_name}} </td>
+                                                <td> {{ $kycsData->subcategory_name}} </td>
                                                 <td> {{ $kycsData->email_id}} </td>
-                                                <td> {{ $kycsData->state_name}} </td>
+                                                <td> {{ $kycsData->id_proof}} - {{ $kycsData->id_number}} </td>
+                                                <td> {{ $kycsData->state_name}}</td>
                                                 <td> {{ $kycsData->cities_name}} </td>
+                                                <td> {{ $kycsData->address}} </td>
                                                 <td> {{ $kycsData->pincode}} </td>
 
                                                 <td> {{ $kycsData->created_at->format('d/m/Y ')}} </td>
                                                 <td> {{ $kycsData->updated_at->format('d/m/Y ')}} </td>
 
-                                              
+
                                             </tr>
-                                           
+
                                             @endforeach
                                         </tbody>
                                     </table>
 
+
                                 </div>
-                            </div>
-                        </div> <!-- end col -->
+                         <!-- end col -->
                     </div>
                     <!-- end row -->
 

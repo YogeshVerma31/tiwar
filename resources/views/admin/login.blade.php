@@ -74,7 +74,7 @@
                     <div class="text-center mt-4">
                         <div class="mb-3">
                             <a href="index.html" class="auth-logo">
-                                <img src="{{asset('assets/images/vt_education_logo.png')}}" height="80" class="logo-dark mx-auto" alt="">
+                                <img src="{{asset('assets/images/tiwar_logo.png')}}" height="80" class="logo-dark mx-auto" alt="">
                                 <img src="{{asset('assets/images/logo-light.png')}}" height="30" class="logo-light mx-auto" alt="">
                             </a>
                         </div>

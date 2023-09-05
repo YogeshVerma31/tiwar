@@ -2147,7 +2147,7 @@ body > .listygo-tooltip .listygo-tooltip-bottom:after {
   align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .header-main .site-nav .site-menu {
   margin: 0;

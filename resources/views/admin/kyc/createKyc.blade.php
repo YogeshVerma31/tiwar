@@ -72,19 +72,37 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="validationCustom01" class="form-label">Name</label>
-                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="User name" name="name" required>
+                                                    <label for="validationCustom01" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" name="first_name" required>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="validationCustom01" class="form-label">Father name</label>
-                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Father name" name="father_name" required>
+                                                    <label for="validationCustom01" class="form-label">Last name</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Last name" name="last_name" required>
                                                 </div>
                                             </div>
 
                                         </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="validationCustom01" class="form-label">Father Name</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Father name" name="father_name" required>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="validationCustom01" class="form-label">Mobile number</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Mobile number" name="phone_number" required>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
 
                                         <div class="row">
                                             <div class="col-md-6">
@@ -96,42 +114,49 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="mb-3">
-                                                    <label for="validationCustom01" class="form-label">Wife name</label>
-                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Wife name" name="wife_name">
+                                                    <label for="validationCustom01" class="form-label">Special Education</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="special education" name="special_education" required>
                                                 </div>
+
                                             </div>
 
+
                                         </div>
+
 
                                         <div class="row">
+
                                             <div class="col-md-6">
+
                                                 <div class="mb-3">
-                                                    <label for="validationCustom01" class="form-label">Children name</label>
-                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Children name" name="children_name">
+                                                    <label class="form-label">Select work categry</label>
+
+                                                    <select class="form-select" name="category_id" id="category" required="true" aria-label="Default select example">
+                                                    <option value="" selected>Select Category</option>
+
+                                                    @foreach ($category as $categoryData)
+                                                        <option value="{{ $categoryData->id }}"> {{ $categoryData->category_name }}</option>
+                                                        @endforeach
+                                                    </select>
+
                                                 </div>
 
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="validationCustom01" class="form-label">Phone number</label>
-                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Phone number" name="phone_number" required>
+                                            <div class="mb-3">
+                                                    <label class="form-label">Select work subcategry</label>
+
+                                                    <select class="form-select" name="subcategory_id" id="subcategory" required="true" aria-label="Default select example">
+                                                    <option value="">Select Subcategory</option>
+
+                                                    </select>
+
                                                 </div>
+
                                             </div>
+
 
                                         </div>
-
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="mb-3">
-                                                    <label for="validationCustom01" class="form-label">Address</label>
-                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Address" name="address" required>
-                                                </div>
-
-                                            </div>
-
-
-                                        </div>
-
 
 
                                         <div class="row">
@@ -143,6 +168,35 @@
                                                 </div>
 
                                             </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Select id proof categry</label>
+
+                                                    <select class="form-select" name="id_proof" required="true" aria-label="Default select example">
+                                                        <option value="" selected>Select</option>
+                                                        <option value="Aadhaar Card">Aadhaar Card</option>
+                                                        <option value="Passport">Passport</option>
+                                                        <option value="Driving licence">Driving licence</option>
+                                                        <option value="Voter ID">Voter ID</option>
+                                                        <option value="PAN Card">PAN Card</option>
+                                                        <option value="other">other</option>
+                                                    </select>
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="validationCustom01" class="form-label">Id Number</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Id Number" name="id_number" required>
+                                                </div>
+
+                                            </div>
+
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Select State</label>
@@ -159,9 +213,6 @@
                                                 </div>
 
                                             </div>
-                                        </div>
-
-                                        <div class="row">
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Select City</label>
@@ -176,6 +227,22 @@
 
 
                                             </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-3">
+                                                    <label for="validationCustom01" class="form-label">Address</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Address" name="address" required>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="row">
+
 
                                             <div class="col-md-6">
                                                 <div class="mb-3">
@@ -259,6 +326,22 @@
 
                     data.data.forEach(city =>
                         $('#city').append(`<option value="${city.id}">${city.city}</option>`)
+                    )
+                }
+            })
+        })
+        $('#category').on('change', e => {
+            $('#subcategory').empty()
+            $.ajax({
+                url: `getSubcategory/${e.target.value}`,
+                headers: {
+                    'X-CSRF-Token': '{{ csrf_token() }}',
+                },
+                success: data => {
+                    $('#subcategory').append(`<option value="">Select Subcategory</option>`)
+
+                    data.data.forEach(city =>
+                        $('#subcategory').append(`<option value="${city.id}">${city.subcategory_name}</option>`)
                     )
                 }
             })

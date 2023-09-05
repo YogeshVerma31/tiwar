@@ -70,7 +70,7 @@
                                                 <th>id</th>
                                                 <th>Name</th>
                                                 <th>Image</th>
-                                                <th>Course Name</th>
+                                                <th>Category Name</th>
                                                 <th>Status</th>
                                                 <th>Created At</th>
                                                 <th>Updated At</th>

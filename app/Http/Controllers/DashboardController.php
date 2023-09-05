@@ -15,4 +15,9 @@ class DashboardController extends Controller
     public function index_admin(Request $request){
         return view('admin.dashboard');
     }
+
+    public function index_subcategory(Request $request,$id){
+        $category = Category::all();
+        return view('frontend.subcategory',['category'=>$category]);
+    }
 }

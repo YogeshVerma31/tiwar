@@ -51,8 +51,8 @@
                     <div class="row">
                         <div class="col-lg-2 col-12">
                             <div class="site-logo text-center">
-                                <a href="index.html" class="main-logo"><img src="{{asset('frontendAssets/img/logo.png')}}" width="200" alt="Site Logo"></a>
-                                <a href="index.html" class="sticky-logo"><img src="{{asset('frontendAssets/img/logo.png')}}" width="180" alt="Site Logo"></a>
+                                <a href="index.html" class="main-logo"><img src="{{asset('frontendAssets/img/logo.png')}}" width="60" alt="Site Logo"></a>
+                                <a href="index.html" class="sticky-logo"><img src="{{asset('frontendAssets/img/logo.png')}}" width="40" alt="Site Logo"></a>
                             </div>
                         </div>
                         <div class="col-lg-7 col-12 possition-static">
@@ -68,7 +68,7 @@
                                         <ul class="dropdown-menu-col-1">
                                         @foreach ($category as $categoryData)
                                             <li>
-                                                <a href="{{route('subcategory',['id' => $categoryData->id])}}">{{$categoryData->category_name}}</a>
+                                                <a href="demo/html/listygo/listygo/listing-grid-view1.html">{{$categoryData->category_name}}</a>
                                             </li>
                                             @endforeach
                                         </ul>

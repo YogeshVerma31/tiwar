@@ -35,7 +35,7 @@ class SubCategoryController extends Controller
                 ->select('sub_categories.*', 'categories.category_name')
                 ->get();
             $categoryModel = Category::all();
-            // print_r($categoryModel);die;
+            // print_r($subcategoryModel);die;
 
             return view("admin.subcategory.viewSubCategory", ['subcategoryData' => $subcategoryModel, 'categoryData' => $categoryModel]);
         } catch (Exception $e) {

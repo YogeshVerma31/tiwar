@@ -15,16 +15,21 @@ return new class extends Migration
     {
         Schema::create('kycs', function (Blueprint $table) {
             $table->id();
-            $table->string("name")->null;
+            $table->string("first_name")->null;
+            $table->string("last_name")->null;
             $table->string("father_name")->null;
-            $table->string("wife_name")->null;
-            $table->string("children_name")->null;
-            $table->string("phone_number")->null;
-            $table->string("address")->null;
+            $table->string("phone_name")->null;
+            $table->string("qualification")->null;
+            $table->string("special_education")->null;
+            $table->bigInteger("category_id")->null;
+            $table->bigInteger("subcategory_id")->null;
             $table->string("email_id")->null;
+            $table->string("id_proof")->null;
+            $table->string("id_number")->null;
             $table->bigInteger("state_id")->null;
             $table->bigInteger("city_id")->null;
-            $table->bigInteger("pincode")->null;
+            $table->string("address")->null;
+            $table->string("pincode")->null;
             $table->bigInteger("created_by");
             $table->timestamps();
         });
